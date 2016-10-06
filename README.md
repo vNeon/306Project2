@@ -1,4 +1,4 @@
-# 306Project2
+# Team Se7en - 306 Project 2
 
 ## About
 This project is to create a serious game.
