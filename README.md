@@ -14,7 +14,7 @@ In the game you play as the main character who is going through the loss of thei
 ## Build Instructions
 ### Prototype
 1. Go to [releases](https://github.com/vNeon/306Project2/releases) of GitHub.
-2. Download the "PROTOTYPE" version as an executeable (.exe) from the [releases](https://github.com/vNeon/306Project2/releases) section
+2. Download the "PROTOTYPE" version as an executeable (.exe) from the [release](https://github.com/vNeon/306Project2/releases) section
 
 ## Execution Instructions
 ### Prototype
