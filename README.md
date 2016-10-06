@@ -23,7 +23,7 @@ In the game you play as the main character who is going through the loss of thei
 * **Name --------------UPI-----------GitHub ID**
 * Johnny Pham------dpha010------JohPa8696
 * Vincent Nio--------vnio666-------vNeon
-* Jay Pandya---------jpan889-------Jay
+* Jay Pandya---------jpan889-------bawse
 * Jack Wong---------lwon229-------Jack-Wong94
 * Priyankit Singh-----psin778-------PriyankitSingh
 * Alex Li--------------kli438---------Humbis
