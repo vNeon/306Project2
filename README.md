@@ -2,7 +2,7 @@
 
 ## Note
 
-We are the team that have chosen Unity Collaborate as our choice of source control.
+We are the team that have used Unity Collaborate as our choice of source control.
 
 For details about how the work was distributed please see our [Team Member Contributions](https://github.com/vNeon/306Project2/wiki/Team-member-contributions) page on GitHub wiki.
 
