@@ -12,10 +12,15 @@ In the game you play as the main character who is going through the loss of thei
 ## Aditional information
 
 (GitHub wiki Home)[https://github.com/vNeon/306Project2/wiki]
+
 (Plan)[https://github.com/vNeon/306Project2/wiki/Plan]
+
 (Design Docs)[https://github.com/vNeon/306Project2/wiki/Design-Documents]
+
 (Design Decisions)[https://github.com/vNeon/306Project2/wiki/Design-Decisions]
+
 (Team Member Contributions)[https://github.com/vNeon/306Project2/wiki/Team-member-contributions]
+
 (Meeting Minutes)[https://github.com/vNeon/306Project2/wiki/Meeting-Minutes]
 
 
