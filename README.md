@@ -12,8 +12,14 @@ This project is to create a serious game.
 In the game you play as the main character who is going through the loss of their parent from suicide. Through solving a series of puzzles, the character identifies signs that had led to their mother’s depression and eventual suicide. The game takes a journey through the parent's life through the protagonist’s memory to show the progression of depression. This game teaches the player to find signs of depression in themselves and their loved ones.
 
 ## Build Instructions
+### Prototype
+Download the prototype as an executeable (.exe) from the [release](https://github.com/vNeon/306Project2/releases) section
 
 ## Execution Instructions
+### Prototype
+Double click on the PROTOTYPE.exe file.
+Select your prefered graphics configurations.
+Then click "Play!"
 
 ## Aditional information
 
