@@ -1,5 +1,11 @@
 # Team Se7en - 306 Project 2
 
+## Note
+
+We are the team that have chosen Unity Collaborate as our choice of source control.
+
+For details about how the work was distributed please see our [Team Member Contributions](https://github.com/vNeon/306Project2/wiki/Team-member-contributions) page on GitHub wiki.
+
 ## About
 This project is to create a serious game.
 
