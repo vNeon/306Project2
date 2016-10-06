@@ -13,13 +13,14 @@ In the game you play as the main character who is going through the loss of thei
 
 ## Build Instructions
 ### Prototype
-Download the prototype as an executeable (.exe) from the [release](https://github.com/vNeon/306Project2/releases) section
+1. Go to [releases](https://github.com/vNeon/306Project2/releases) of GitHub.
+2. Download the "PROTOTYPE" version as an executeable (.exe) from the [releases](https://github.com/vNeon/306Project2/releases) section
 
 ## Execution Instructions
 ### Prototype
-Double click on the PROTOTYPE.exe file.
-Select your prefered graphics configurations.
-Then click "Play!"
+1. Double click on the PROTOTYPE.exe file.
+2. Select your preferred graphics configurations.
+3. Then click "Play!"
 
 ## Aditional information
 
