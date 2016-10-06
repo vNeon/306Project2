@@ -12,13 +12,12 @@ In the game you play as the main character who is going through the loss of thei
 ## Aditional information
 
 ## Authors
-Name              UPI          GitHub ID
---------------------------------------------
-Johnny Pham       dpha010      JohPa8696
-Vincent Nio       vnio666      vNeon
-Jay Pandya        jpan889      Jay
-Jack Wong         lwon229      Jack-Wong94
-Priyankit Singh   psin778      PriyankitSingh
-Alex Li           kli438       Humbis
-Aaron Zhong       azho472
-Dinal             dwan133
+* **Name --------------UPI-----------GitHub ID**
+* Johnny Pham------dpha010------JohPa8696
+* Vincent Nio--------vnio666-------vNeon
+* Jay Pandya---------jpan889-------Jay
+* Jack Wong---------lwon229-------Jack-Wong94
+* Priyankit Singh-----psin778--------PriyankitSingh
+* Alex Li--------------kli438---------Humbis
+* Aaron Zhong------azho472                    
+* Dinal--------dwan133    
