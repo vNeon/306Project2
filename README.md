@@ -24,6 +24,9 @@ In the game you play as the main character who is going through the loss of thei
 3. Select your preferred graphics configurations.
 4. Then click "Play!"
 
+## Web Version
+The URL for the game vneon.x10host.com/Requiem_Lite/ or click [here](vneon.x10host.com/Requiem_Lite/)
+
 ## Aditional information
 
 * [GitHub wiki Home](https://github.com/vNeon/306Project2/wiki)
