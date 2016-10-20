@@ -15,6 +15,7 @@ public class Interactable : MonoBehaviour {
     public TextAsset message;
     public int fontSize;        
     public Font font;
+    public Texture2D backgroundTexture;
 
     public bool hasObjective;
     public string objective;
@@ -27,24 +28,31 @@ public class Interactable : MonoBehaviour {
     public SpawnItems spawner;
 	private Rect label = new Rect (0, 60, 200, 25);
 
+    public ObjectPickupSound soundEffect;
 	private static bool levelComplete;
     
     // Use this for initialization.
     void Start()
     {
 		levelComplete = false;
+        inTrigger = false;
+        isFound = false;
 	}
     
     // Check if the player enters the objects collider.
     void OnTriggerEnter(Collider other)
     {
-        inTrigger = true;
+		if (other.tag == "Player") {
+			inTrigger = true;
+		}
     }
 
     // Check if the player enters the objects collider.
     void OnTriggerExit(Collider other)
     {
-        inTrigger = false;
+		if (other.tag == "Player") {
+			inTrigger = false;
+		}
     }
 
     // Returns whether the level has ended.
@@ -69,15 +77,22 @@ public class Interactable : MonoBehaviour {
 				gameObject.
                     GetComponent<BoxCollider> ().enabled = false;
 				gameObject.GetComponent<Renderer> ().enabled = false;
+                
+                //Play pick up sound 
+				if (soundEffect != null) {
+					soundEffect.playEffect();
+				}
 
                 // Adds to player score.
 				gameController.AddScore (itemScore);
 				gameController.sleepMeter.value += itemScore / 2;
 
                 // Adds object to inventory.
-				GameObject i;
-				i = Instantiate (inventoryIcons [0]);
-				i.transform.SetParent (inventoryPanel.transform);
+				if (inventoryIcons.Length != 0) {
+					GameObject i;
+					i = Instantiate (inventoryIcons [0]);
+					i.transform.SetParent (inventoryPanel.transform);
+				}
 
                 // Updates game objective.
                 if(hasObjective)
@@ -111,13 +126,17 @@ public class Interactable : MonoBehaviour {
     void OnGUI()
 	{
 		if (inTrigger && !GameController.getGameOver() && !GameController.getPausedStatus()) {
-			GUI.Box (label, "Press E to take item");
+			GUI.Box (label, "Press E to interact");
 		} else if (isFound) {
+
+            //Gui Style
             GUIStyle style = new GUIStyle("box");
             style.fontSize = fontSize;
             style.font = font;
-            GUI.color = Color.yellow;
-			GUI.Box (new Rect (Screen.width - Screen.width / 2 - 225, Screen.height - Screen.height / 2 - 150, 450, 300), message.text, style);
+            style.normal.textColor = Color.black;
+            style.normal.background = backgroundTexture;
+
+            GUI.Box (new Rect (Screen.width - Screen.width / 2 - 250, Screen.height - Screen.height / 2 - 350, 500, 700), message.text, style);
 			GUI.Box (new Rect (0, 60, 200, 25), "Press F to exit");
 		}
 	}

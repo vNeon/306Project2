@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 using System;
 
 
-
+/**
+ * Display the pre level's texts
+ **/ 
 public class DisplayNextText : MonoBehaviour {
     private Text storyText;
     private int currentPage = 0;
@@ -35,7 +37,7 @@ public class DisplayNextText : MonoBehaviour {
         else
         {
             // Loads first game level ("Interior Scene")
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("interior scene");
             // TODO: Load appropriate level according the previously played level 
         }
     }

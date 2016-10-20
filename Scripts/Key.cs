@@ -13,6 +13,13 @@ public class Key : MonoBehaviour {
 	public GameObject inventoryPanel;
 	public GameObject[] inventoryIcons;
 
+    public AudioClip keyRattle;
+
+    void Start() {
+        keyRattle = GetComponent<AudioSource>().clip;
+        //reset variables
+        door.GetComponent<Door>().key = false;
+    }
     // Check if the player enters the keys collider.
     void OnTriggerEnter(Collider other)
     {
@@ -32,6 +39,10 @@ public class Key : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                //Play key rattle sound
+                //Debug.Log(keyRattle.name);
+                AudioSource.PlayClipAtPoint(keyRattle, transform.position);
+
                 // Makes a door avaiable for use by the payer.
 				door.GetComponent<Door> ().key = true;
                 Destroy(this.gameObject);
@@ -39,7 +50,7 @@ public class Key : MonoBehaviour {
                 // Add key to inventory.
 				GameObject i = Instantiate (inventoryIcons[0]);
 				// i.transform.SetParent (inventoryPanel.transform);
-				i.transform.parent = inventoryPanel.transform; // ERROR
+				i.transform.parent = inventoryPanel.transform;
             }
         }
     }

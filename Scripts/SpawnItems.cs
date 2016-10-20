@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * Implementation of RGP, randomly spawn object at predetermine spots
+ **/ 
 public class SpawnItems : MonoBehaviour {
 
 	public Transform[] SpawnPointsRandom;
@@ -20,13 +23,16 @@ public class SpawnItems : MonoBehaviour {
 		//SpawnNewItem();
 	}
 
+    //Spawns an item at any of the listed spawn points.
 	public void SpawnNewItemRandom(){
 		int spawnPointIndex = Random.Range (0, SpawnPointsRandom.Length);
 		//Debug.Log ("Spawned a key at index " + spawnPointIndex);
 		Instantiate (SpawnedObjects[objIndex], SpawnPointsRandom[spawnPointIndex].position, SpawnPointsRandom[spawnPointIndex].rotation);
+        Debug.Log("Spawned: " + SpawnedObjects[objIndex].name + " at " + spawnPointIndex);
         objIndex++;
 	}
 
+    //Spawns an item at a fixed point
     public void SpawnNewItemFixed()
     {
         //Debug.Log("Spawned a key at index " + spawnPointIndex);

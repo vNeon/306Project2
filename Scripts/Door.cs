@@ -12,6 +12,8 @@ public class Door : MonoBehaviour
     public bool inTrigger;
     public bool key;
     public GameController gm;
+    public AudioClip doorOpenAudio;
+    public AudioClip doorCloseAudio;
 
 	protected bool isOpen = false;
 
@@ -37,18 +39,19 @@ public class Door : MonoBehaviour
             {
 				this.GetComponent<Animation> ().Play ("DoorOpen");
 				isOpen = true;
-
+                AudioSource.PlayClipAtPoint(doorOpenAudio, transform.position, 0.5f);
                 // Achievement for opening their first door
                 if (!PlayerPrefs.HasKey("FirstDoor"))
                 {
-                    gm.UnlockAchievement("FirstDoor", "Open Sesame");
+                    gm.UnlockAchievement("FirstDoor", "Open Sesame: Opened the first door.");
                 }
 			}
             else if (Input.GetKeyDown (KeyCode.E) && isOpen)
             {
 				this.GetComponent<Animation> ().Play ("DoorClose");
 				isOpen = false;
-			}
+                AudioSource.PlayClipAtPoint(doorCloseAudio, transform.position, 0.5f); //improvement: add 1.5 sec delay to wait for animation to close
+            }
         }
     }
 

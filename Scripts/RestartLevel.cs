@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
+/**
+ * Start at the beginning of the level
+ **/ 
 public class RestartLevel : MonoBehaviour {
 	
     //Restart scene after game over	

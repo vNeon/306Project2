@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+
+//Author: Jack Wong
 //To read the clue once the button icon in the inventory is clicked.
 public class Read : MonoBehaviour {
 	public bool inTrigger = false;

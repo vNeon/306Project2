@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/**
+ * Cotroller for Radio sound
+ **/ 
 public class RadioController : MonoBehaviour {
 	public List<RadioStation> stations = new List<RadioStation> ();
 	public int currentStationIndex;

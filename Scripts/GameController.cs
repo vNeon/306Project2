@@ -4,9 +4,9 @@ using UnityEngine.UI;
 using UnityStandardAssets.Characters.ThirdPerson;
 using UnityEngine.SceneManagement;
 
-public enum Difficulty { 
+/*public enum Difficulty { 
         Easy, Normal, Hard
-}
+}*/
 
 /*
  * This is the game controller which is in charge of dealing with
@@ -27,8 +27,8 @@ public class GameController : MonoBehaviour {
 	public Text finalScore;
 
 
-    private Difficulty difficulty{get; set;}
-    private int difMultiplyer;
+    //private Difficulty difficulty{get; set;}
+    //private int difMultiplyer;
     private float startTime;
     private bool shouldCursorShow = false;
     private ScoreController scoreController;
@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour {
     private int levelID;
 	private static bool isPaused;
 	private static bool gameOver;
+	private bool hasAxe;
 
 
 	// Use this for initialization
@@ -45,20 +46,8 @@ public class GameController : MonoBehaviour {
         //PlayerPrefs.DeleteAll();
 
         //Set difficulty beased on user selection, set levelID and multiplyers
-        difficulty = (Difficulty)PlayerPrefs.GetInt("Difficulty");
+        /*difficulty = (Difficulty)PlayerPrefs.GetInt("Difficulty");
         Debug.Log(difficulty);
-        scoreController = ScoreController.getInstance();
-        if (SceneManager.GetActiveScene().name == "interior scene") {
-            levelID = 0;
-        }
-        else if (SceneManager.GetActiveScene().name == "level 2") {
-            levelID = 1;
-        }
-        else if (SceneManager.GetActiveScene().name == "Level 3") {
-            levelID = 2;
-        }//TODO: level 4 id mapping
-
-        
         if (difficulty.Equals(Difficulty.Easy)) {
             difMultiplyer = 1;
         }
@@ -68,6 +57,24 @@ public class GameController : MonoBehaviour {
         }
         else {
             difMultiplyer = 2;
+        }*/
+
+        //Manage the active scene
+        scoreController = ScoreController.getInstance();
+        if (SceneManager.GetActiveScene().name == "interior scene")
+        {
+            levelID = 0;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            levelID = 1;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 3")
+        {
+            levelID = 2;
+        }
+        else if (SceneManager.GetActiveScene().name == "Level 4") {
+            levelID = 3; 
         }
         currentLevelScore = 0;
         //Start sleep meter tick down
@@ -75,10 +82,13 @@ public class GameController : MonoBehaviour {
         startTime = Time.time;
 		gameOver = false;
 
-       
-        sleepMeter.maxValue = (int)(sleepMeter.maxValue / difMultiplyer);
-        
+		hasAxe = false;
 	}
+
+    void Awake()
+    {
+        Time.timeScale = 1;
+    }
 
     //Useful variables for other controllers to manage GUI
 	public static bool getPausedStatus(){
@@ -110,6 +120,7 @@ public class GameController : MonoBehaviour {
 			}
 		}
 
+        //check if the last object has been collected
 		if (Interactable.getLevelStatus () == true) {
 			endScoreCalculate ();
 			shouldCursorShow = true;
@@ -170,7 +181,7 @@ public class GameController : MonoBehaviour {
         //endScoreCalculate();
         //Unlocks achievement on first death
         if (!PlayerPrefs.HasKey("FirstDeath")) {
-            UnlockAchievement("FirstDeath", "Early Bird");
+            UnlockAchievement("FirstDeath", "Early Bird: game over for the first time.");
         }
 
     }
@@ -193,7 +204,7 @@ public class GameController : MonoBehaviour {
     public void endScoreCalculate() { 
         int completionTime = (int)(Time.time - startTime);
         currentLevelScore -= completionTime;
-        currentLevelScore *= difMultiplyer;
+        //currentLevelScore *= difMultiplyer;
         //Prevent negative scores
         if (currentLevelScore < 0) {
             currentLevelScore = 0;
@@ -206,13 +217,14 @@ public class GameController : MonoBehaviour {
     //A 5 second dialogue box for achievements
     void OnGUI() {
         if (hasTriggeredAchievement) {
-            GUI.Box(new Rect(Screen.width - 300, Screen.height - 40, 300, 40), achievementMessage);
+            GUI.Box(new Rect(Screen.width - 400, Screen.height - 80, 400, 80), achievementMessage);
             StartCoroutine(achievementTickDown());
         }
     }
     //Used to remove the achievement dialogue after 5 seconds
     IEnumerator achievementTickDown() {
         yield return new WaitForSecondsRealtime(5);
+        //Debug.Log("Counting down achievements");
         hasTriggeredAchievement = false;
     }
 
@@ -224,5 +236,12 @@ public class GameController : MonoBehaviour {
         shouldCursorShow = false;
 	}	
 
+	public void setAxeTrue(){
+		hasAxe = true;
 
+	}
+
+	public bool getAxe(){
+		return hasAxe;
+	}
 }

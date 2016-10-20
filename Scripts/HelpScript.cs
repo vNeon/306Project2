@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+
+/**
+ * Create a window and display the help text
+ **/ 
 public class HelpScript : MonoBehaviour {
 	public GUIStyle style;
 	public TextAsset help;
@@ -7,9 +11,7 @@ public class HelpScript : MonoBehaviour {
 	private Rect windowRect=new Rect (Screen.width - Screen.width / 2 - 250, Screen.height - Screen.height / 2 - 150, 500, 400);
 
 	void OnGUI(){
-		//GUI.Box (new Rect (Screen.width - Screen.width / 2 - 250, Screen.height - Screen.height / 2 - 150, 500, 400), help.text);
-		//GUI.color = Color.yellow;
-		//windowRect=GUI.Window (0, windowRect, WindowFunction, "Help");
+        //if help window is not open
 		if (hide != true) {
 			GUI.color = Color.yellow;
 			windowRect=GUI.Window (0, windowRect, WindowFunction, "Help");

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+
 // Destroys the gameObject after a set amount of time.
+// Priyankit Singh
 public class DestroyAfterTime : MonoBehaviour {
 
 	public float destroyTime = 3.0f;

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * Custom Implementation for jumping
+ **/ 
 public class PlayerControllerMinigame : MonoBehaviour {
 
 	public float jump;

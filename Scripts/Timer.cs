@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+//Keeps track of the time spent playing in each level
 public class Timer : MonoBehaviour {
 
 	public Text timerText;

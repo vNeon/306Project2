@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Author: Jack Wong
 //Create an object that could be picked up by the player
+//attach this script to pickupable object
 public class Pickupable : MonoBehaviour {
 	GameObject mainCamera;
 	GameObject player;
@@ -11,6 +13,8 @@ public class Pickupable : MonoBehaviour {
 	public float distance = 3;
 	public float verticalDistance = 2;
 	public float smooth=4;
+
+    public AudioClip dropAudio;
 
 	// Use this for initialization
 	void Start () {
@@ -78,9 +82,16 @@ public class Pickupable : MonoBehaviour {
             carrying = false;
             carriedObject.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             carriedObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
+			carriedObject.gameObject.GetComponent<Rigidbody> ().freezeRotation = false;
             carriedObject = null;
         }
 		
 	}
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.relativeVelocity.magnitude > 2)
+            AudioSource.PlayClipAtPoint(dropAudio, transform.position);
+    }
 }
 

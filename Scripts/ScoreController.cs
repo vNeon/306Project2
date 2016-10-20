@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;  
 
+/**
+ * Calculation of the final score
+ **/
+
 public class ScoreController{
 
     public static ScoreController instance = null;
