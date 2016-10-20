@@ -25,7 +25,9 @@ In the game you play as the main character who is going through the loss of thei
 4. Then click "Play!"
 
 ## Web Version
-The URL for the game "http://vneon.x10host.com/Requiem_Lite/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite/)
+The URL for the level 1 of the game "http://vneon.x10host.com/Requiem_Lite/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite/)
+
+The URL for the level 2-4 of the game "http://vneon.x10host.com/Requiem_Lite_2/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite_2/)
 
 ## Aditional information
 
