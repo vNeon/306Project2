@@ -13,7 +13,7 @@ In the game you play as the main character who is going through the loss of thei
 
 ## Build Instructions
 ### Standalone Installation
-1. Go to https://www.dropbox.com/s/82tnvenis9052va/requiem_1.0_setup.exe?dl=0 on dropbox.
+1. Go to https://www.dropbox.com/s/82tnvenis9052va/requiem_1.0_setup.exe?dl=0 on dropbox. Alternatively go to [Releases](https://github.com/vNeon/306Project2/releases) and look for the version tagged "FINAL".
 2. Download the "requiem_1.0_setup" file  
 3. Run the installer and click the resulting game icon to play the game.
 
