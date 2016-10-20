@@ -24,6 +24,14 @@ In the game you play as the main character who is going through the loss of thei
 3. Select your preferred graphics configurations.
 4. Then click "Play!"
 
+## Web Version
+This is to be considered the Lite version of our game and not the intended method of play.
+We recomend downloading the installer to play the game locally on your pc.
+
+The URL for the level 1 of the game "http://vneon.x10host.com/Requiem_Lite/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite/)
+
+The URL for the level 2-4 of the game "http://vneon.x10host.com/Requiem_Lite_2/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite_2/)
+
 ## Aditional information
 
 * [GitHub wiki Home](https://github.com/vNeon/306Project2/wiki)
@@ -38,7 +46,7 @@ In the game you play as the main character who is going through the loss of thei
 * Name --------------------UPI------------GitHub ID
 * Johnny Pham-------------dpha010------JohPa8696
 * Vincent Nio---------------vnio666-------vNeon
-* Jay Pandya----------------jpan889-------Jay
+* Jay Pandya----------------jpan889-------bawse
 * Jack Wong----------------lwon229-------Jack-Wong94
 * Priyankit Singh------------psin778-------PriyankitSingh
 * Alex Li---------------------kli438----------Humbis
