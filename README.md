@@ -12,17 +12,15 @@ This project is to create a serious game.
 In the game you play as the main character who is going through the loss of their parent from suicide. Through solving a series of puzzles, the character identifies signs that had led to their mother’s depression and eventual suicide. The game takes a journey through the parent's life through the protagonist’s memory to show the progression of depression. This game teaches the player to find signs of depression in themselves and their loved ones.
 
 ## Build Instructions
-### Prototype
-1. Go to [releases](https://github.com/vNeon/306Project2/releases) of GitHub.
-2. Download the "PROTOTYPE.zip"  
-3. Extract the files, make sure PROTOTYPE.exe and PROTOTYPE_Data (folder) are in the same directory
+### Standalone Installation
+1. Go to https://www.dropbox.com/s/82tnvenis9052va/requiem_1.0_setup.exe?dl=0 on dropbox.
+2. Download the "requiem_1.0_setup" file  
+3. Run the installer and click the resulting game icon to play the game.
 
 ## Execution Instructions
-### Prototype
-1. Make sure PROTOTYPE.exe and PROTOTYPE_Data (folder) are in the same directory
-2. Double click on the PROTOTYPE.exe file.
-3. Select your preferred graphics configurations.
-4. Then click "Play!"
+1. Double click on the Requiem file.
+2. Select your preferred graphics configurations.
+3. Then click "Play!"
 
 ## Web Version
 This is to be considered the Lite version of our game and not the intended method of play.
