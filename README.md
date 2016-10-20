@@ -36,8 +36,11 @@ The URL for the level 2-4 of the game "http://teamse7en.x10host.com/Requiem_Part
 * [Plan](https://github.com/vNeon/306Project2/wiki/Plan)
 * [Design Docs](https://github.com/vNeon/306Project2/wiki/Design-Documents)
 * [Design Decisions](https://github.com/vNeon/306Project2/wiki/Design-Decisions)
+* [Game Levels](https://github.com/vNeon/306Project2/wiki/Game-Levels)
 * [Team Member Contributions](https://github.com/vNeon/306Project2/wiki/Team-member-contributions)
 * [Meeting Minutes](https://github.com/vNeon/306Project2/wiki/Meeting-Minutes)
+* [Assests Used](https://github.com/vNeon/306Project2/wiki/Assets-used)
+
 
 
 ## Authors
