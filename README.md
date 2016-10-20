@@ -26,9 +26,9 @@ In the game you play as the main character who is going through the loss of thei
 This is to be considered the Lite version of our game and not the intended method of play.
 We recomend downloading the installer to play the game locally on your pc.
 
-The URL for the level 1 of the game "http://vneon.x10host.com/Requiem_Lite/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite/)
+The URL for the level 1 of the game "http://teamse7en.x10host.com/Requiem_Part_1/" copy paste the link into the address bar. Or click [here](http://teamse7en.x10host.com/Requiem_Part_1/)
 
-The URL for the level 2-4 of the game "http://vneon.x10host.com/Requiem_Lite_2/" copy paste the link into the address bar. Or click [here](http://vneon.x10host.com/Requiem_Lite_2/)
+The URL for the level 2-4 of the game "http://teamse7en.x10host.com/Requiem_Part_2/" copy paste the link into the address bar. Or click [here](http://teamse7en.x10host.com/Requiem_Part_2/)
 
 ## Aditional information
 
